@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quick Pick</title>
+	<script src="quickPick.js" defer></script>	
+	<style>
+		table {
+			border-collapse: collapse;
+			text-align: center;
+		}
+
+		table, tr, td {
+			border: 1px solid black;
+			border-style: dotted;
+		}
+		.table1{
+			border: none;
+			text-align: left;
+		}
+	</style>
+</head>
+<body>
+	<h2>Quick Pick - Six numbers per line</h2>
+	
+	<table class='table1'>
+		<tr class='table1'>
+			<td class='table1'>Total of numbers to choose from:</td>
+			<td class='table1'><input type="text" id="total"></td>
+		</tr>
+		<tr class='table1'>
+			<td class='table1'>Total number of lines:</td>
+			<td class='table1'><input type="text" id="lines"></td>
+		</tr>
+	</table>
+	<br>
+	<button type="button" onclick='getRandomArbitrary(1, (document.getElementById("total").value), (document.getElementById("lines").value))'>Quick Pick</button><br>
+	<div id="numbers">
+	</div>
+	<button onclick="window.history.back();">Back</button>
+</body>

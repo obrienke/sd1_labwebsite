@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prime Numbers</title>
+	<script src="prime_numbers.js" defer></script>	
+</head>
+<body>
+	<h2>Prime Number Checker</h2>
+	
+	<h4>Enter a number in the field below and click the Check Number button to determine if the number entered is a prime number or not.</h4>
+	<table>
+		<tr>
+			<td>Number:</td>
+			<td><input type="text" id="pn"></td>
+		</tr>
+	</table>
+	<br>
+	<button type="button" onclick="prime_number(document.getElementById('pn').value)">Check Number</button><br>
+	<button onclick="window.history.back();">Back</button>
+</body>

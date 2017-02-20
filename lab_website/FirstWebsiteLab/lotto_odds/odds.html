@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lottery Calculator</title>
+	<script src="odds.js" defer></script>	
+</head>
+<body>
+	<h2>Calculator to give total number of combinations for Lottery</h2>
+	
+	<table>
+		<tr>
+			<td>Total of numbers to choose from:</td>
+			<td><input type="text" id="total"></td>
+		</tr>
+		<tr>
+		<td>Total number per line allowed:</td>
+			<td><input type="text" id="picks"></td>
+		</tr>
+	</table>
+	<br>
+	<button type="button" onclick="odds()">Calculate Total Combinations</button><br>
+	<div id="found">
+	</div>
+	<button onclick="window.history.back();">Back</button>
+</body>

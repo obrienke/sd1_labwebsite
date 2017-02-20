@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quick Pick</title>
+	<script src="luckyStars.js" defer></script>	
+	<style>
+		table {
+			border-collapse: collapse;
+			text-align: center;
+		}
+
+		table, tr, td {
+			border: 1px solid black;
+			border-style: dotted;
+		}
+		.table1{
+			border: none;
+			text-align: left;
+		}
+		.ls{
+			border: 1px solid red;
+			border-style: dotted;	
+			padding: 1px;	
+		}
+	</style>
+</head>
+<body>
+	<h2>Euro Millions Quick Pick</h2>
+	
+	<table class='table1'>
+		<tr class='table1'>
+			<td class='table1'>Total of numbers to choose from:</td>
+			<td class='table1'><input type="text" id="total" value="50"></td>
+		</tr>
+		<tr class='table1'>
+			<td class='table1'>Total number of lines:</td>
+			<td class='table1'><input type="text" id="lines" value="10"></td>
+		</tr>
+		<tr class='table1'>
+			<td class='table1'>How many numbers per line?</td>
+			<td class='table1'><input type="text" id="perLine" value="5"></td>
+		</tr>
+		<tr class='table1'>
+			<td class='table1'>Total of numbers to choose lucky star numbers from?</td>
+			<td class='table1'><input type="text" id="totalLS" value="12"></td>
+		</tr>
+		<tr class='table1'>
+			<td class='table1'>How many lucky star numbers per line?</td>
+			<td class='table1'><input type="text" id="lsPerLine" value="2"></td>
+		</tr>		
+	</table>
+	<br>
+	<button type="button" onclick='getRandomArbitrary(1, (document.getElementById("total").value), (document.getElementById("lines").value), (document.getElementById("perLine").value), (document.getElementById("totalLS").value), (document.getElementById("lsPerLine").value))'>Quick Pick</button><br>
+	<div id="numbers">
+	</div>
+</body>
